@@ -1,0 +1,41 @@
+* {
+    font-family: agenda, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #0f3a5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-logotype-lockup {
+    width: 50%
+}
+
+.tagline {
+    font-weight: 100;
+    color: #AFB3C2;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .tagline {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .tagline {
+        font-size: 3em;
+    }
+}
