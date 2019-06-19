@@ -4,7 +4,45 @@
     font-style: normal;
 }
 
-html, body {
+header {
+    background-color: #454547;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    width: 40%;
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav-logo {
+    width: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul a {
+    height: 30px;
+}
+
+nav img {
+    height: 60px;
+}
+
+/* html, body {
     height: 100%;
 }
 
@@ -73,4 +111,69 @@ i.far, i.fas, i.fab {
     .tagline {
         font-size: 3em;
     }
+} */
+
+@media only screen and (min-width: 480px) {
+    header {
+        height: 50px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 50px;
+        margin: 0;
+        align-items: center;
+    }
+
+    nav img {
+        background-color: #454547;
+        padding: 12px 15px;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+
+    nav ul a {
+        height: 100%;
+        border-top: 4px solid #454547;
+        border-bottom: 4px solid #454547;
+        box-sizing: border-box;
+        transition: all 0.5s ease-out;
+    }
+    
+    nav ul a:hover {
+        color: #b4a895;
+        border-bottom: 4px solid #b4a895;
+    }
+}
+
+@media only screen and (min-width: 768px) {    
+    nav {
+        justify-content: center;
+    }
+    
+    nav ul {
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .nav-logo {
+        width: auto;
+    }
+    
+    nav li {
+        padding: 0 40px;
+    }
+    
+    nav a {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
 }
